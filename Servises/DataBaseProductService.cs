@@ -16,7 +16,7 @@ namespace zad5.Servises
 
         public IEnumerable<DbProducts> GetProducts()
         {
-            var DbProductQuerry = from DbProduct in _context.DbProduct select DbProduct;
+            var DbProductQuerry = from DbProducts in _context.DbProduct select DbProducts;
             return DbProductQuerry.ToList();
         }
     }
